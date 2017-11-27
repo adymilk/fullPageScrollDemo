@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2017新年家装铁锤行动</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+	<style>
+    .section1 { background: url(images/1.png) 100%;}
+    .section2 { background: url(images/2.png) 50%;}
+    .section3 { background: url(images/3.png) 50%;}
+    .section4 { background: url(images/4.png) 50%;}
+    .section5 { background: url(images/5.png) 50%;}
+    .section6 { background: url(images/6.png) 50%;}
+    .section7 { background: url(images/7.png) 50%;}
+    .section8 { background: url(images/8.png) 50%;}
+    .section9 { background: url(images/9.png) 50%;}
+    .section10 { background: url(images/10.png) 100%;}
+    .section{background-size: cover;}
+    .top{
+        position: absolute;
+        z-index: 999;
+        text-align: center;
+        width: 100%;
+    }
+    #fp-nav ul li a span, .fp-slidesNav ul li a span {
+        border: 1px solid #ffffff;
+    }
+    #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
+        background: #ffffff;
+    }
+        .orderMsg{
+            position: absolute;
+            right: 20%;
+            bottom: 100px;
+            width: 326px;
+            height: 453px;
+            background-color: white;
+            padding-top: 10px;
+        }
+        .orderMsg input{
+            width: 255px;
+            height: 30px;
+            margin-right: 13px;
+            margin-left: 13px;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .tel,.telIcon{
+            display: inline-block;
+            height: 40px;
+            padding: 10px;
+        }
+        .telIcon img{
+            width: 30px;
+            height: 30px;
+        }
+        .order_btn{
+            background-color: #FEDF0A;
+            color: #210000;
+            padding: 6px 31px;
+            box-shadow: 0px 3px 6px #ccc;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-top: 22px;
+        }
+        #alertMsg{
+            display: block;
+            z-index: 999;
+        }
+    .btn_container{
+        position: absolute;
+        width: 100%;
+        bottom: 10%;
+    }
+    .close{
+        position: absolute;
+        display: inline-block;
+        right: 5px;
+        width: 17px;
+        height: 24px;
+        top: 10px;
+    }
+
+</style>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+
+</head>
+<body>
+<!--顶部导航栏 开始-->
+<div class="top">
+    <ul class="inlineboxul nav">
+        <li><a style="font-size:16px;" href="/index.php/index/index.php">首&nbsp;页 </a>
+        </li>
+
+        <li> <a style="font-size:16px;" href="/index.php/index/ljst.php"> 了解工厂店 </a> </li>
+        <!--  <li> <a style="font-size:16px;" href="/index.php/index/zxyy.php"> 装修预约 </a> </li> -->
+
+        <li><a style="font-size:16px;" href="/index.php/index/act.php">最新活动  </a>
+            <ul>
+                <li> <a style="font-size:16px;" href="/index.php/index/act.php">工厂店活动 </a> </li>
+                <li> <a style="font-size:16px;" href="/index.php/index/zxyy.php"> 装修预约 </a> </li>
+
+
+            </ul>
+        </li>
+
+        <li><a style="font-size:16px;" href="/index.php/index/gybj.php">家装展示 </a>
+            <ul>
+
+                <li> <a style="font-size:16px;" href="/index.php/index/gybj.php">逛样板房</a> </li>	             <li> <a style="font-size:16px;" href="/index.php/index/zxal.php">  业主案例 </a>  </li>
+            </ul>
+        </li>
+        <li><a style="font-size:16px;" href="/index.php/index/tdsj.php">团队设计 </a>
+            <ul>
+
+                <li> <a style="font-size:16px;" href="/index.php/index/tdsj.php">帮您设计</a> </li>
+                <!--   <li> <a style="font-size:16px;" href="/index.php/index/mxsjs.php">预约设计师</a></li>-->
+                <li> <a style="font-size:16px;" href="/index.php/index/sjtd.php"> 设计团队 </a>  </li>
+            </ul></li>
+        <li><a style="font-size:16px;" href="/index.php/index/dqb.php">为你服务 </a>
+            <ul>
+
+                <li> <a style="font-size:16px;" href="/index.php/index/dqb.php">大全包清单</a> </li>
+                <li> <a style="font-size:16px;" href="/index.php/index/sgbz.php">  施工标准 </a>  </li>
+            </ul></li>
+        <li><a style="font-size:16px;" href="/index.php/index/news.php">公司动态</a>
+            <ul>
+
+                <li> <a style="font-size:16px;" href="/index.php/index/news.php">时事热点</a> </li>
+                <li> <a style="font-size:16px;" href="/index.php/index/zxbk.php"> 装修百科 </a>  </li>
+            </ul></li>
+        <li><a style="font-size:16px;" href="/index.php/index/gywm.php">公司介绍</a> <ul>
+            <li> <a style="font-size:16px;" href="/index.php/index/gywm.php">品牌故事</a> </li>
+
+            <li> <a style="font-size:16px;" href="/index.php/index/gsyj.php">公司愿景 </a> </li>
+
+
+            <li> <a style="font-size:16px;" href="/index.php/index/xzzj.php">寻找战将 </a> </li>
+
+
+            <li> <a style="font-size:16px;" href="/index.php/index/stgxy.php">盛腾工学院 </a>  </li>
+        </ul></li>
+
+    </ul>
+</div>
+<!--顶部导航栏 结束-->
+
+<!--全屏图片部分 开始-->
+<div id="dowebok">
+    <div class="section section1"></div>
+    <div class="section section2"></div>
+    <div class="section section3"></div>
+    <div class="section section4">
+        <p align="center" class="btn_container">
+            <button class="order_btn alertForm"  type="submit">立即预约</button>
+        </p>
+    </div>
+    <div class="section section5">
+        <p align="center" class="btn_container">
+            <button class="order_btn alertForm"  type="submit">立即预约</button>
+        </p>
+    </div>
+    <div class="section section6"></div>
+    <div class="section section7">
+        <p align="center" class="btn_container">
+            <button class="order_btn alertForm"  type="submit">立即预约</button>
+        </p>
+    </div>
+    <div class="section section8"></div>
+    <div class="section section9"></div>
+    <div class="section section10">
+        <div class="orderMsg">
+            <form action="" style="text-align: center">
+                <h1 align="center" style="padding-bottom: 30px; color: #F46D00; padding-top: 10px;">报名预约立享</h1>
+                <input type="text" name="name" placeholder="姓名">
+                <input type="number" name="tel" placeholder="电话">
+                <input type="text" name="area" placeholder="面积">
+                <input type="text" name="address" placeholder="地址">
+                <p align="center">
+                <button class="order_btn"  type="submit">立即预约</button>
+                </p>
+                <br>
+                <p align="center">
+                    <span class="telIcon"><img src="images/tel.png" alt=""></span>
+                    <span class="tel" style="color: #E30000; font-size: 28px; font-weight: bold">0551-65660788</span>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+<!--全屏图片部分 结束-->
+
+<!--预约弹窗-->
+<div class="orderMsg" id="alertMsg" style="display: none">
+    <span class="close"><img src="images/close.png" alt=""></span>
+    <form action="" style="text-align: center" onsubmit="return checkForm()">
+        <h1 align="center" style="padding-bottom: 30px; color: #F46D00; padding-top: 10px;">报名预约立享</h1>
+        <input type="text" name="notAllowNull name" placeholder="姓名">
+        <input type="number" name="notAllowNull tel" placeholder="电话">
+        <input type="text" name="notAllowNull area" placeholder="面积">
+        <input type="text" name="notAllowNull address" placeholder="地址">
+        <p align="center">
+            <button class="order_btn"  type="submit">立即预约</button>
+        </p>
+        <br>
+        <p align="center">
+            <span class="telIcon"><img src="images/tel.png" alt=""></span>
+            <span class="tel" style="color: #E30000; font-size: 28px; font-weight: bold">0551-65660788</span>
+        </p>
+    </form>
+</div>
+<script>
+    $(function(){
+        $('#dowebok').fullpage({
+            'navigation': true,
+        });
+    });
+
+    //弹框
+    $('.alertForm').click(function () {
+        $('#alertMsg').css('right','40%');
+        $('#alertMsg').show();
+        $('.close').click(function () {
+            $('#alertMsg').hide();
+        });
+    });
+
+    //表单验证非空
+    function checkForm(){
+        if ($('#tel ')){
+
+        }
+        return true;
+    }
+
+
+</script>
+</body>
+</html>
